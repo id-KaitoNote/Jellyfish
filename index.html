@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang=ja dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jellyfish</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrap-up"></div>
+    <div class="wrap-down"></div>
+    <p class="title1">I want to live fluffy like a jellyfish</p>
+    <p class="title2">It hurts when stabbed.</p>
+    <p class="title3">Actually there is no brain.</p>
+    <div class="container">
+    <ul id="dropdown">
+      <li class="dropdown-child">HOME</li>
+      <li class="dropdown-child">ABOUT
+          <ul class="dropdown_menu">
+              <li><a href="#"><div>PROFILE</div></a></li>
+              <li><a href="#"><div>ECOSYSTEM</div></a></li>
+          </ul>
+      </li>
+      <li class="dropdown-child">WORK
+          <ul class="dropdown_menu">
+              <li><a href="#"><div>EAT</div></a></li>
+              <li><a href="#"><div>SWIM</div></a></li>
+              <li><a href="#"><div>PHOTOSYNTHESIS</div></a></li>
+          </ul>
+      </li>
+      <li class="dropdown-child">NEWS
+          <ul class="dropdown_menu">
+              <li><a href="#"><div>2020</div></a></li>
+              <li><a href="#"><div>2019</div></a></li>
+              <li><a href="#"><div>2018</div></a></li>
+              <li><a href="#"><div>2017</div></a></li>
+          </ul>
+      </li class="dropdown-child">
+      <li class="dropdown-child">CONTACT</li>
+    </ul>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="sample.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script>
+      $('.container').ripples({ //波紋をつけたい要素の指定
+        resolution: 800, //波紋の広がりの速度（値が大きいほど遅くなる）
+        dropRadius: 50, //波紋の大きさ（値が大きいほどでかくなる）
+        perturbance: 10 //波紋による屈折量（値が大きいほどブレる）
+        });
+    </script>
+  </body>
+</html>
