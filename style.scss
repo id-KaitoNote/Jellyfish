@@ -4,11 +4,16 @@ body {
   padding: 0px;
 }
 
+canvas {
+  height: 1000px;
+}
+
 .container {
   height: 1000px;
   background-image: url(jellyfish.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .wrap-up {
@@ -46,7 +51,7 @@ body {
   width: 100%;
   height: 1px;
   background: #464646;
-  position:absolute;
+  position: absolute;
   bottom: 0;
   left: 0;
   content: "";
@@ -153,7 +158,7 @@ li {
   display: flex;
   justify-content: flex-end;
   margin: 0px;
-  padding: 80px 80px;
+  padding: 80px 80px 870px 0;
 }
 
 .dropdown_menu {
@@ -214,48 +219,180 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    background-color: #0d0d0d;
+    margin: 0px;
+    padding: 0px;
+  }
 
   .container {
-    height: 1000px;
+    height: 100%;
     background-image: url(jellyfish.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+  }
+
+  .wrap-up {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    transform-origin: top left;
+    //要素の原点
+    animation: animationUp 2s ease 2.5s 1 forwards;
+    // ・animation-name -> 「animationUp」
+    // ・animation-duration -> 「2s」
+    // ・animation-timing-function -> 「ease」
+    // ・animation-delay -> 「2.5s」
+    // ・animation-iteration-count -> 「1」
+    // ・animation-fillmode -> 「forwards」
+  }
+  @keyframes animationUp {
+    from{
+      transform: scale(1, 1);
+      // 0%でXが0%,Yが100%
+    }
+    to {
+      transform: scale(0, 1);
+      // 100%でXが100%, Yが100%
+    }
+  }
+
+  .wrap-up:after {
+    width: 100%;
+    height: 1px;
+    background: #464646;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    transform-origin: top left;
+    animation: rotation 2s ease 0s 1 forwards;
+  }
+  @keyframes rotation {
+    from{
+      transform: scale(0, 1);
+    }
+    to {
+      transform: scale(1, 1);
+    }
+  }
+
+  .wrap-down {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 9999;
+    transform-origin: top right;
+    animation: animationDown 2s ease 2.5s 1 forwards;
+  }
+  @keyframes animationDown {
+    from{
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(0, 1);
+    }
+  }
+
+  .wrap-down:after {
+    width: 100%;
+    height: 1px;
+    background: #464646;
+    position:absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    transform-origin: top left;
+    animation: rotation 2s ease 0s 1 forwards;
+  }
+  @keyframes rotation {
+    from{
+      transform: scale(0, 1);
+    }
+    to {
+      transform: scale(1, 1);
+    }
   }
 
   .title1 {
-    margin: 0 0 10px 0;
-    font-size: 4vw;
+    margin: 0;
+    padding: 100px 0 10px 0;
+    font-size: 5.5vw;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    top: 110px;
-    left: 60px;
+    position: static;
     z-index: 100000;
   }
 
   .title2 {
-    font-size: 3vw;
-    margin: 0px;
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-size: 4.5vw;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    top: 140px;
+    position: static;
     z-index: 100000;
   }
 
   .title3 {
-    font-size: 2vw;
-    margin: 0px;
+    margin: 0;
+    padding: 0 0 1000px 0;
+    font-size: 3.5vw;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    top: 165px;
+    position: static;
     z-index: 100000;
   }
 
-#dropdown {
-  display: none;
-}
+  li {
+    width: 150px;
+    color: white;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  #dropdown {
+    display: none;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 80px 80px 880px 0;
+  }
+
+  .dropdown_menu {
+    padding: 10px 0;
+    display: none;
+    div{
+      padding: 10px 20px;
+      border-left: solid white 1px;
+    }
+    a {
+      color: white;
+      text-decoration:  none;
+    }
+    a:hover{
+      color: #6a5acd;
+      div {
+        transition: ease 0.8s;
+      }
+    }
+  }
 
 }
