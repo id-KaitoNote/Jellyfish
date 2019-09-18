@@ -35,7 +35,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
               .css({
                 opacity:"0.0"
             }).animate({
-               "padding-left":"40px",
+               "padding-left":"25px",
                 opacity:"1.0"},2000
               )
             });
@@ -44,7 +44,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
               .css({
                  opacity:"0"
             }).animate({
-               "padding-left":"40px",
+               "padding-left":"25px",
                 opacity:"1.0"},2000
               )
             });
@@ -53,7 +53,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
               .css({
                 opacity:"0"
             }).animate({
-               "padding-left":"40px",
+               "padding-left":"25px",
                 opacity:"1.0"},2000
               )
             });
