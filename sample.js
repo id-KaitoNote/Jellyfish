@@ -50,13 +50,13 @@ $(function(){
     });
 });
 
-$(function(){
-    $('.dropdown-child').hover(function(){
-      //親リストにマウスが重なった時に重なった親リストの子リストだけを表示させる
-        $(this).children("ul").slideToggle();
-    });
-});
-『Toggle』 ver
+// $(function(){
+//     $('.dropdown-child').hover(function(){
+//       //親リストにマウスが重なった時に重なった親リストの子リストだけを表示させる
+//         $(this).children("ul").slideToggle();
+//     });
+// });
+// 『Toggle』 ver
 
 if (window.matchMedia( "(max-width: 768px)" ).matches) {
 
