@@ -1,55 +1,18 @@
-//
-// //IDを取得
-// var i = document.getElementById('dropdown');
-// var c = document.querySelectorAll('.dropdown-child');
-//
-// //「target」にマウスが乗った時にイベントを実行する
-// c.mouseenter = function() {
-//   console.log("OK!!!!!!!!!!!!!!!!!!!!!!!!!");
-// };
-//
 
-//
-// var c = document.querySelector('.dropdown-child');
-// var m = document.querySelector('.dropdown_menu');
-//
-//   c.addEventListener('mouseenter', function() {
-//     console.log('OK!!!!!!!!!!!!!!');
-//     m.style.display = 'block';
-//   });
-//
-//   c.addEventListener('mouseleave', function() {
-//     console.log('NG!!!!!!!!!!!!!!!!!');
-//     m.style.display = 'none';
-//   });
-
-// var c = document.querySelector('.dropdown-child');
-// var m = document.querySelector('.dropdown_menu');
-//
-// // for (let i = 0; i < 2; i++) {
-//
-//   c.addEventListener('mouseenter', () => {
-//     console.log('OK!!!!!!!!!!!!!!');
-//     m.style.display = 'block';
-//   });
-//
-//   c.addEventListener('mouseleave', () => {
-//     console.log('NG!!!!!!!!!!!!!!!!!');
-//     m.style.display = 'none';
-//   });
-// }
 
 $(function(){
-    $('.dropdown-child').mouseenter(function(){
+    $('#dropdown li').mouseenter(function(){
       //親リストにマウスが重なった時に重なった親リストの子リストだけを表示させる
-        $(this).children("ul").slideDown("slow");
+        $(this).children("ul").stop().slideDown("slow");
     }),
-    $('.dropdown-child').mouseleave(function(){
+    $('#dropdown li').mouseleave(function(){
       //リストからマウスが外れたらスライドしながらリストを消す
-        $(this).children("ul").slideUp("fast");
+        $(this).children("ul").stop().slideUp("fast");
     });
 });
 
+<<<<<<< HEAD
+=======
 // $(function(){
 //     $('.dropdown-child').hover(function(){
 //       //親リストにマウスが重なった時に重なった親リストの子リストだけを表示させる
@@ -58,10 +21,11 @@ $(function(){
 // });
 // 『Toggle』 ver
 
+>>>>>>> f5b681d6462c857bec01836ddb610c73aee1feb2
 if (window.matchMedia( "(max-width: 768px)" ).matches) {
 
   $(function(){
-  $(".title1").delay(4500)
+  $(".title1").delay(14500)
               .css({
                 opacity:"0.0"
             }).animate({
@@ -70,7 +34,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
               )
             });
   $(function(){
-  $(".title2").delay(5000)
+  $(".title2").delay(15000)
               .css({
                  opacity:"0"
             }).animate({
@@ -79,7 +43,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
               )
             });
   $(function(){
-  $(".title3").delay(5500)
+  $(".title3").delay(15500)
               .css({
                 opacity:"0"
             }).animate({
@@ -91,7 +55,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
 } else {
 
   $(function(){
-  $(".title1").delay(4500)
+  $(".title1").delay(14500)
               .css({
                 left:"-100px",
                 opacity:"0.0"
@@ -101,7 +65,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
               )
             });
   $(function(){
-  $(".title2").delay(5000)
+  $(".title2").delay(15000)
               .css({
                 left:"-100px",
                 opacity:"0.0"
@@ -111,7 +75,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
               )
             });
   $(function(){
-  $(".title3").delay(5500)
+  $(".title3").delay(15500)
               .css({
                 left:"-100px",
                 opacity:"0.0"
@@ -122,3 +86,29 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
             });
 
 }
+
+// $(function(){
+//     $('.dropdown-child').hover(function(){
+//       //親リストにマウスが重なった時に重なった親リストの子リストだけを表示させる
+//         $(this).children("ul").slideToggle();
+//     });
+// });
+
+// 『Toggle』 ver
+
+
+// const nodeList = document.querySelectorAll('.node');
+//
+// nodeList.forEach((target) => {
+//
+//   target.addEventListener('mouseenter', function() {
+//      console.log('やるじゃん');
+//      target.firstElementChild.style.display = 'block';
+//    });
+//   target.addEventListener('mouseleave', function() {
+//      console.log('砂糖より甘いですね');
+//      target.firstElementChild.style.display = 'none';
+//    });
+//   });
+
+// 『JS』 ver
