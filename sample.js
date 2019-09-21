@@ -11,8 +11,6 @@ $(function(){
     });
 });
 
-<<<<<<< HEAD
-=======
 // $(function(){
 //     $('.dropdown-child').hover(function(){
 //       //親リストにマウスが重なった時に重なった親リストの子リストだけを表示させる
@@ -21,7 +19,6 @@ $(function(){
 // });
 // 『Toggle』 ver
 
->>>>>>> f5b681d6462c857bec01836ddb610c73aee1feb2
 if (window.matchMedia( "(max-width: 768px)" ).matches) {
 
   $(function(){

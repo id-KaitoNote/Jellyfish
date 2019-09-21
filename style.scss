@@ -15,14 +15,14 @@ canvas {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  -webkit-animation: openShutter 18s forwards;
-  animation: openShutter 18s forwards;
+  -webkit-animation: openShutter 17s forwards;
+  animation: openShutter 17s forwards;
 }
-@keyframes byeShutter {
+@keyframes openShutter {
 0% {
   opacity: 0;
 }
-80% {
+70% {
   opacity: 0;
 }
 100% {
@@ -39,14 +39,14 @@ canvas {
   bottom:0;
   background-color:#1e1e1e;
   z-index:10000;
-  -webkit-animation: byeShutter 15s forwards;
-  animation: byeShutter 15s forwards;
+  -webkit-animation: byeShutter 14s forwards;
+  animation: byeShutter 14s forwards;
 }
 @keyframes byeShutter {
   0% {
     opacity: 1;
   }
-  80% {
+  70% {
     opacity: 1;
   }
   100% {
@@ -133,7 +133,7 @@ canvas {
 
   .title {
   position: absolute;
-  top: 0;
+  top: 25%;
   width: 100%;
   z-index: 10003;
   line-height: 300px;
@@ -143,7 +143,7 @@ canvas {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: .4em;
-  font-size: 24px;
+  font-size: 42px;
   text-shadow: 0 1px 0 rgba(black, .1);
   text-indent: .3em;
 }
@@ -301,6 +301,23 @@ li {
     background-position: center;
     position: relative;
   }
+
+  .title {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  z-index: 10003;
+  line-height: 300px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
+}
 
   .title1 {
     margin: 0;
