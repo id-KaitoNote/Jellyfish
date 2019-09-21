@@ -15,8 +15,8 @@ canvas {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  -webkit-animation: openShutter 17s forwards;
-  animation: openShutter 17s forwards;
+  -webkit-animation: openShutter 18s forwards;
+  animation: openShutter 18s forwards;
 }
 @keyframes byeShutter {
 0% {
@@ -39,8 +39,8 @@ canvas {
   bottom:0;
   background-color:#1e1e1e;
   z-index:10000;
-  -webkit-animation: byeShutter 14s forwards;
-  animation: byeShutter 14s forwards;
+  -webkit-animation: byeShutter 15s forwards;
+  animation: byeShutter 15s forwards;
 }
 @keyframes byeShutter {
   0% {
