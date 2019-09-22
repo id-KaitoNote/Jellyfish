@@ -1,23 +1,22 @@
 
-
 $(function(){
-    $('#dropdown li').mouseenter(function(){
+    $('.dropdown-child').hover(function(){
       //親リストにマウスが重なった時に重なった親リストの子リストだけを表示させる
-        $(this).children("ul").stop().slideDown("slow");
-    }),
-    $('#dropdown li').mouseleave(function(){
-      //リストからマウスが外れたらスライドしながらリストを消す
-        $(this).children("ul").stop().slideUp("fast");
+        $(this).children("ul").slideToggle();
     });
 });
 
+//
 // $(function(){
-//     $('.dropdown-child').hover(function(){
+//     $('#dropdown li').mouseenter(function(){
 //       //親リストにマウスが重なった時に重なった親リストの子リストだけを表示させる
-//         $(this).children("ul").slideToggle();
+//         $(this).children("ul").stop().slideDown("slow");
+//     }),
+//     $('#dropdown li').mouseleave(function(){
+//       //リストからマウスが外れたらスライドしながらリストを消す
+//         $(this).children("ul").stop().slideUp("fast");
 //     });
 // });
-// 『Toggle』 ver
 
 if (window.matchMedia( "(max-width: 768px)" ).matches) {
 
