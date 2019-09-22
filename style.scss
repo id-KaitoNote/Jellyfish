@@ -15,21 +15,8 @@ canvas {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  -webkit-animation: openShutter 17s forwards;
-  animation: openShutter 17s forwards;
 }
-// @keyframes openShutter {
-// 0% {
-//   opacity: 0;
-// }
-// 70% {
-//   opacity: 0;
-// }
-// 100% {
-//   opacity: 1;
-//   z-index: 9999;
-// }
-// }
+
 
 .inner-box {
   position:fixed;
@@ -90,15 +77,14 @@ canvas {
   animation: drift 10000ms infinite linear;
   background: #6600CC;
 }
-
-.wave.-two {
-  position: absolute;
-  top: 50%;
-  left: 90%;
-  animation: drift 8000ms infinite linear;
-  opacity: .1;
-  background: #000066;
-}
+// .wave.-two {
+//   position: absolute;
+//   top: 50%;
+//   left: 90%;
+//   animation: drift 8000ms infinite linear;
+//   opacity: .1;
+//   background: #000066;
+// }
 .wave.-four {
   position: absolute;
   top: 50%;
