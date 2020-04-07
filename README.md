@@ -1,6 +1,6 @@
-https://id-KaitoNote.github.io/Jellyfish/
-
 『クラゲのポートフォリオサイト』
+
+https://id-KaitoNote.github.io/Jellyfish/
 
 「実装した機能」
 ・アコーディオンメニュー(javaScript)
