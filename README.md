@@ -1,7 +1,7 @@
-『クラゲのポートフォリオサイト』
+『Jellyfish Portofolio』
 
 『URL』
 https://id-KaitoNote.github.io/Jellyfish/
 
-『実装した機能』
-「オープニングアニメーション/CSSアニメーション/アコーディオンメニュー(javaScript)/アコーディオンメニュー(jQuery)/フェードイン(jQuery)/波紋エフェクト(jQueyプラグイン)」
+『Challenge』
+「Opening Animation/CSS Animation/Dropdown Menu(javaScript&jQuery)/FadeIn/jquery.ripples」
